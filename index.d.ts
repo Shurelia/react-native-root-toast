@@ -2,9 +2,9 @@
  * typescript definition
  * @author wallel
  */
+
 declare module 'react-native-root-toast' {
     import * as React from 'react';
-    import * as ReactNative from 'react-native';
     import { StyleProp, TextStyle, ViewStyle } from 'react-native';
     export interface ToastOptions {
         containerStyle?: StyleProp<ViewStyle>;
@@ -26,7 +26,7 @@ declare module 'react-native-root-toast' {
         onShown?: Function;
     }
 
-    export interface ToastProps extends ToastOptions, ReactNative.ViewProps {}
+    export interface ToastProps extends ToastOptions {}
 
     export interface Durations {
         LONG: number;
